@@ -11,7 +11,7 @@ app.use(helmet())
 app.use(cors());
 app.use(bodyParser.json());
 app.use(err.Message)
-let allowlist = ['http://localhost:7000']
+let allowlist = ['http://localhost:3000']
 let corsOptionsDelegate = function (req, callback) {
   let corsOptions;
   if (allowlist.indexOf(req.header('Origin')) !== -1) {
